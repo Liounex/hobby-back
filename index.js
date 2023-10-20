@@ -1,6 +1,7 @@
-const express = require('express')
-const pool = require('./config/Database.js')
-//import pool from './config/Database.js'
+// const express = require('express')
+import express from 'express'
+//const pool = require('./config/Database.js')
+import pool from './config/Database.js'
 
 const app = express()
 const port = 3000;
