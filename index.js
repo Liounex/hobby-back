@@ -10,6 +10,7 @@ app.get('/', (req, res) => {
     res.send({ "message": "Hola mundo Cambiado cambio desde github si funcionao" })
 })
 
+
 app.get('/api/data', async (req, res) => {
     try {
         const client = await pool.connect();
