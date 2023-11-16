@@ -7,9 +7,7 @@ const app = express()
 const port = 3000;
 
 app.get('/', (req, res) => {
-    const response = { message: 'Hola, mundo!' };
-
-    res.json(response);
+    res.send({ "message": "Hola mundo Cambiado" })
 })
 
 app.get('/api/data', async (req, res) => {
