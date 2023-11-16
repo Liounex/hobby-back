@@ -7,7 +7,7 @@ const app = express()
 const port = 3000;
 
 app.get('/', (req, res) => {
-    res.send({ "message": "Hola mundo Cambiado" })
+    res.send({ "message": "Hola mundo Cambiado cambio desde github si funcionao" })
 })
 
 app.get('/api/data', async (req, res) => {
