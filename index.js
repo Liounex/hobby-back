@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 app.get('/api/data', async (req, res) => {
     try {
         const client = await pool.connect();
-        const result = await client.query('SELECT * FROM Pets')
+        const result = await client.query('SELECT * FROM users')
         client.release()
 
         res.json(result.rows);
