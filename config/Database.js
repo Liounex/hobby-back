@@ -5,4 +5,9 @@ const { Pool } = pg;
 const pool = new Pool({
     connectionString: process.env.POSTGRES_URL + "?sslmode=require",
 })
-export default pool;
+
+const client = await pool.connect();
+
+// client.release()
+
+export default client;
