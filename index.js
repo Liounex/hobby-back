@@ -17,7 +17,7 @@ app.get('/api/data', async (req, res) => {
         const result = await client.query('SELECT * FROM users')
         client.release()
 
-        res.json(result.rows);
+        res.send(result.rows);
     } catch (error) {
         console.error('Error al obtener datos:', error)
         res.status(500).json({ error: 'No se pudieron obtener los datos.' })
